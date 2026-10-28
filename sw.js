@@ -1,9 +1,9 @@
 // Service worker: giúp điện thoại nhận đây là app để cài, và hiện trang báo khi mất mạng.
 // Chỉ lưu tạm phần vỏ app; số liệu báo cáo luôn lấy trực tiếp từ Google (không lưu ở đây).
-const VERSION = 'dv-shell-v1';
+const VERSION = 'dv-shell-v2';
 const SHELL = [
   './', './index.html', './config.js', './offline.html', './manifest.webmanifest',
-  './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-32.png'
+  './icons/logo.png', './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/favicon-32.png'
 ];
 
 self.addEventListener('install', (e) => {

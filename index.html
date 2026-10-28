@@ -11,21 +11,20 @@
   <!-- iPhone: mở toàn màn hình khi thêm vào màn hình chính -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="DELTA-V">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <style>
-    html, body { margin: 0; height: 100%; background: #1B547C; overflow: hidden; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; }
+    html, body { margin: 0; height: 100%; background: #ffffff; overflow: hidden; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; }
     /* chừa phần tai thỏ / thanh trạng thái iPhone */
     body { padding: env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left); box-sizing: border-box; }
     #app { display: block; width: 100%; height: 100%; border: 0; background: #f8fafc; }
-    #splash { position: fixed; inset: 0; background: #1B547C; color: #fff; display: flex; flex-direction: column;
+    #splash { position: fixed; inset: 0; background: #ffffff; color: #005977; display: flex; flex-direction: column;
               align-items: center; justify-content: center; z-index: 10; transition: opacity .25s; }
     #splash.hide { opacity: 0; pointer-events: none; }
-    #splash img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
-    #splash .name { margin-top: 18px; font-weight: 800; letter-spacing: .2em; font-size: 20px; }
-    #splash .sub { margin-top: 6px; font-size: 12px; opacity: .8; letter-spacing: .05em; }
-    #splash .spin { margin-top: 28px; width: 28px; height: 28px; border: 3px solid rgba(255,255,255,.3); border-top-color: #fff; border-radius: 50%; animation: s 0.9s linear infinite; }
+    #splash img { width: 150px; height: auto; }
+    #splash .sub { margin-top: 18px; font-size: 12px; font-weight: 700; letter-spacing: .12em; color: #1B547C; }
+    #splash .spin { margin-top: 28px; width: 28px; height: 28px; border: 3px solid rgba(0,89,119,.2); border-top-color: #005977; border-radius: 50%; animation: s 0.9s linear infinite; }
     #splash .msg { margin-top: 14px; font-size: 13px; opacity: .85; min-height: 18px; text-align: center; padding: 0 24px; }
     @keyframes s { to { transform: rotate(360deg); } }
     #net { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: #ef4444; color: #fff; text-align: center;
@@ -34,8 +33,7 @@
 </head>
 <body>
   <div id="splash">
-    <img src="icons/icon-192.png" alt="">
-    <div class="name">DELTA-V</div>
+    <img src="icons/logo.png" alt="DELTA-V">
     <div class="sub">KHU NHÀ Ở XÃ HỘI OXH02</div>
     <div class="spin"></div>
     <div class="msg" id="splash-msg">Đang mở báo cáo...</div>
